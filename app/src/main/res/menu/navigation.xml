@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_index"
+        android:icon="@drawable/home"
+        android:title="@string/main_home" />
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_file"-->
+        <!--android:icon="@drawable/file"-->
+        <!--android:title="@string/main_file" />-->
+    <!--<item-->
+        <!--android:id="@+id/navigation_setting"-->
+        <!--android:icon="@drawable/setting"-->
+        <!--android:title="@string/main_setting" />-->
+
+</menu>
