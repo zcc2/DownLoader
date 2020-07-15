@@ -49,6 +49,7 @@ public class MainActivity extends BaseActivity {
 //        disableShiftMode(mNavigation);
 //        mNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         switchFragment(curFragment, indexFragment);
+        setStatueBar(false);
     }
 
     @Override

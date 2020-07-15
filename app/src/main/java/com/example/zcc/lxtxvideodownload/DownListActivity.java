@@ -44,6 +44,8 @@ public class DownListActivity extends BaseActivity {
     RecyclerView recyclerView;
     @BindView(R.id.refresh)
     SmartRefreshLayout mRefresh;
+    @BindView(R.id.tv_empty)
+    TextView tvEmpty;
     private List<DownInfo> dowmList = new ArrayList<>();
     private DownloadAdapter adapter;
     @Override
@@ -108,6 +110,7 @@ public class DownListActivity extends BaseActivity {
         }
         Log.e("edturlsize====", dowmList.size()+"");
         adapter.setDatas(newDownList);
+        tvEmpty.setVisibility(newDownList.size()<1?View.VISIBLE:View.GONE);
         adapter.notifyDataSetChanged();
 
     }

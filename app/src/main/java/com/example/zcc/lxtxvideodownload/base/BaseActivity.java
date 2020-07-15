@@ -11,6 +11,7 @@ import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.widget.Toast;
 
+import com.example.zcc.lxtxvideodownload.base.utils.UltimateBar;
 import com.kaopiz.kprogresshud.KProgressHUD;
 import com.pbrx.mylib.base.LibBaseActivity;
 
@@ -87,7 +88,16 @@ public abstract class BaseActivity extends LibBaseActivity {
         super.showLoadingComplete();
 
     }
-
+    /**
+     *  3.沉浸式状态栏和导航栏：在 onCreate() 方法中：
+     * @param isApplyNav
+     */
+    public void setStatueBar(boolean isApplyNav){
+        UltimateBar.newImmersionBuilder()
+                .applyNav(false)    // 是否应用到导航栏
+                .build(this)
+                .apply();
+    }
 
 
     @Override

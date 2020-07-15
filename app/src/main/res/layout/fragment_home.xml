@@ -2,13 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
              android:layout_height="match_parent"
              tools:context=".home.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="@color/common_red_color"
+        android:layout_marginTop="20dp"
         android:layout_height="45dp">
         <TextView
             android:layout_width="wrap_content"
@@ -16,31 +22,65 @@
             android:layout_centerVertical="true"
             android:text="@string/app_name"
             android:textSize="18sp"
+            android:visibility="gone"
             android:layout_height="wrap_content"/>
         <TextView
             android:layout_width="wrap_content"
             android:text="下载记录"
             android:id="@+id/tv_list"
             android:gravity="center"
+            android:textColor="#363636"
             android:layout_alignParentRight="true"
             android:layout_marginRight="5dp"
             android:textSize="15sp"
             android:layout_height="match_parent"/>
     </RelativeLayout>
-    <EditText
-        android:id="@+id/edt_url"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:layout_margin="@dimen/dp10"
-        android:layout_centerInParent="true"
-        android:hint="@string/input_url"/>
-    <Button
-        android:layout_below="@+id/edt_url"
-        android:id="@+id/bt_download"
-        android:layout_margin="@dimen/dp10"
-        android:text="@string/download"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:textColorHint="@color/common_search_text_color"
+            android:padding="@dimen/dp10"
+            android:background="@drawable/bt_round"
+            android:layout_margin="@dimen/dp10"
+            android:hint="@string/input_url"/>
+        <Button
+            android:id="@+id/bt_download"
+            android:layout_margin="@dimen/dp10"
+            android:text="@string/download"
+            android:background="@drawable/bt_round"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/bt_download"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:src="@drawable/shipin"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:src="@drawable/yinle"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:src="@drawable/wenjian"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
 
 </RelativeLayout>

@@ -6,6 +6,6 @@
     <string name="main_home">视频</string>
     <string name="main_file">我的下载</string>
     <string name="main_setting">设置</string>
-    <string name="input_url">请输入网址(可下载文件，图片，视频等)</string>
+    <string name="input_url">请输入网址(可下载视频，图片，文件等)</string>
     <string name="download">下载</string>
 </resources>

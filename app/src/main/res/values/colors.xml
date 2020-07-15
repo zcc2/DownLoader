@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#191919</color>
+    <color name="colorPrimaryDark">#191919</color>
     <color name="colorAccent">#FF4081</color>
     <color name="common_text_color">#ff3d3d3d</color>
     <color name="common_default_color">#ffbdbdbd</color>
@@ -9,5 +9,7 @@
     <color name="common_org_color">#FE9148</color>
     <color name="num_bg_color">#FFF0F0F0</color>
     <color name="common_blue">#3196FB</color>
+    <color name="common_gray">#323333</color>
+    <color name="common_search_text_color">#757575</color>
     <color name="common_chart_table_bg">#F5F6FA</color>
 </resources>
